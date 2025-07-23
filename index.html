@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Showcase Basketball hosts elite youth basketball tournaments in Spring 2026 across the Fraser Valley and Lower Mainland, BC. Register your team today!">
+    <meta name="keywords" content="youth basketball, basketball tournament, BC basketball, Fraser Valley, Lower Mainland, Langley, Abbotsford, Surrey, youth sports">
+    
+    <title>Showcase Basketball Tournaments | Fraser Valley & Lower Mainland, BC</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS STYLES --- */
+
+        /* :root contains all the main theme variables for easy updates */
+        :root {
+            /* ============================================
+            === THEME CUSTOMIZATION - UPDATE COLORS HERE ===
+            ============================================
+            */
+            --brand-name: 'Showcase'; /* Not used directly in CSS, but good for reference */
+            --primary-color: #0B0B0F;       /* Primary background - almost black */
+            --secondary-color: #FFFFFF;    /* Primary text color - white */
+            --accent-color: #5C4BFF;       /* Accent color - a vibrant indigo/purple */
+            --accent-color-darker: #4a3acc; /* For button hover states */
+            --overlay-color: rgba(10, 15, 30, 0.75); /* Dark navy overlay for hero */
+            --card-bg-color: #1a1a22;      /* Background for cards and sections */
+            --border-color: rgba(255, 255, 255, 0.1);
+            
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        /* --- Global Resets & Base Styles --- */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+        
+        /* --- Reusable Components --- */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--secondary-color);
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-color-darker);
+            border-color: var(--accent-color-darker);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border
