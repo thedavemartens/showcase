@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase Basketball Tournaments - Spring 2026</title>
+    <meta name="description" content="Elite youth basketball tournaments in Fraser Valley & Lower Mainland, BC. Join Showcase for competitive hoops in Spring 2026.">
+    <meta name="keywords" content="youth basketball, basketball tournament, vancouver, fraser valley, lower mainland, bc basketball, showcase">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Russo One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Russo+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #F3F4F6; /* A slightly off-white for better readability */
+        }
+        .font-russo {
+            font-family: 'Russo One', sans-serif;
+        }
+        .brand-name {
+            /* Easy to update brand name sitewide */
+            --brand-name: "Showcase";
+        }
+        .brand-text::before {
+            content: var(--brand-name);
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 10, 0.8), rgba(16, 24, 64, 0.9)), url('https://placehold.co/1920x1080/000000/FFFFFF?text=Youth+Basketball+Action');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn {
+            @apply px-6 py-3 rounded-lg font-semibold text-center transition-transform duration-300 ease-in-out transform hover:scale-105;
+        }
+        .btn-primary {
+            @apply bg-indigo-600 text-white hover:bg-indigo-500;
+        }
+        .btn-secondary {
+            @apply bg-gray-700 text-white hover:bg-gray-600;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-extrabold text-center mb-12;
+        }
+        .card {
+            @apply bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:border-indigo-500 hover:shadow-2xl;
+        }
+        .icon-glow {
+            @apply text-indigo-400 drop-shadow-[0_0_8px_rgba(129,140,248,0.5)];
+        }
+    </style>
+</head>
+<body class="brand-name">
+
+    <!-- Header & Navigation -->
+    <header class="bg-black/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider brand-text"></a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#tournaments" class="text-gray-300 hover:text-white transition">Tournaments</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                <a href="#waiver" class="text-gray-300 hover:text-white transition">Waiver</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+            </div>
+            <a href="#tournaments" class="btn btn-primary md:hidden">Register</a>
+             <!-- Mobile Menu Button can be added here if needed -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 lg:py-48 text-center flex flex-col items-center">
+                <h1 class="font-russo text-4xl md:text-6xl lg:text-7xl uppercase tracking-wider">
+                    <span class="brand-text"></span> Basketball Tournaments
+                </h1>
+                <p class="mt-4 text-lg md:text-2xl font-light text-indigo-200">Elite Youth Hoops in Fraser Valley & Lower Mainland, BC – Launching Spring 2026</p>
+                <div class="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#tournaments" class="btn btn-primary text-lg">View Tournament Info</a>
+                    <a href="/downloads/Showcase_Player_Waiver.pdf" download class="btn btn-secondary text-lg">Download Player Waiver</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Tournaments Section -->
+        <section id="tournaments" class="py-20 md:py-28 bg-black">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Upcoming Tournaments</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Tournament Card 1: Langley -->
+                    <div class="card">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-indigo-400">Langley Events Centre</h3>
+                            <p class="text-gray-400 mt-1">Langley, BC</p>
+                            <div class="mt-6 space-y-4 text-lg">
+                                <p><strong class="font-semibold text-gray-200">Dates:</strong> April 14-16, 2026</p>
+                                <p><strong class="font-semibold text-gray-200">Ages:</strong> Boys & Girls, U11-U17</p>
+                                <p><strong class="font-semibold text-gray-200">Entry:</strong> $450 per team</p>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-700/50 px-6 py-4">
+                            <a href="#contact" class="block w-full btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Tournament Card 2: Abbotsford -->
+                    <div class="card">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-indigo-400">UFV Athletic Centre</h3>
+                            <p class="text-gray-400 mt-1">Abbotsford, BC</p>
+                            <div class="mt-6 space-y-4 text-lg">
+                                <p><strong class="font-semibold text-gray-200">Dates:</strong> May 5-7, 2026</p>
+                                <p><strong class="font-semibold text-gray-200">Ages:</strong> Boys & Girls, U12-U18</p>
+                                <p><strong class="font-semibold text-gray-200">Entry:</strong> $450 per team</p>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-700/50 px-6 py-4">
+                            <a href="#contact" class="block w-full btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Tournament Card 3: Surrey -->
+                    <div class="card">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-indigo-400">Surrey Sport & Leisure</h3>
+                            <p class="text-gray-400 mt-1">Surrey, BC</p>
+                            <div class="mt-6 space-y-4 text-lg">
+                                <p><strong class="font-semibold text-gray-200">Dates:</strong> June 2-4, 2026</p>
+                                <p><strong class="font-semibold text-gray-200">Ages:</strong> Boys & Girls, U11-U17</p>
+                                <p><strong class="font-semibold text-gray-200">Entry:</strong> $450 per team</p>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-700/50 px-6 py-4">
+                             <a href="#contact" class="block w-full btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tournament Highlights Section -->
+        <section id="highlights" class="py-20 md:py-28 bg-gray-900">
+            <div class="container mx-auto px-6">
+                 <h2 class="section-title">Tournament Highlights</h2>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                    
+                    <!-- Highlight 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="icon-glow text-5xl mb-4">💵</div>
+                        <h3 class="text-xl font-bold mb-2">Low Gate Fees</h3>
+                        <p class="text-gray-400">Max $5 gate fee for all fans. Affordable for the whole family.</p>
+                    </div>
+
+                    <!-- Highlight 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="icon-glow text-5xl mb-4">🎁</div>
+                        <h3 class="text-xl font-bold mb-2">Coach Gifts</h3>
+                        <p class="text-gray-400">A special thank you gift for the head coach of every registered team.</p>
+                    </div>
+
+                    <!-- Highlight 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="icon-glow text-5xl mb-4">🏅</div>
+                        <h3 class="text-xl font-bold mb-2">Player of the Game</h3>
+                        <p class="text-gray-400">Awards for standout players in every single game of the tournament.</p>
+                    </div>
+
+                    <!-- Highlight 4 -->
+                    <div class="flex flex-col items-center">
+                        <div class="icon-glow text-5xl mb-4">👕</div>
+                        <h3 class="text-xl font-bold mb-2">Championship Gear</h3>
+                        <p class="text-gray-400">Exclusive championship t-shirts for all division winners.</p>
+                    </div>
+
+                 </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 md:py-28 bg-black">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h2 class="section-title"><span class="brand-text"></span> Mission</h2>
+                <div class="text-lg text-gray-300 space-y-6 leading-relaxed">
+                    <p>Showcase Basketball is dedicated to fostering the growth of youth basketball across British Columbia. Our mission is to provide a professional, competitive, and positive tournament experience for young athletes, coaches, and their families. We believe in creating events that not only showcase talent but also build character, sportsmanship, and a lifelong love for the game.</p>
+                    <p>Launching in Spring 2026, we are excited to bring elite tournaments to the vibrant communities of the Fraser Valley and Lower Mainland, offering a premier platform for teams to compete and develop their skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waiver Section -->
+        <section id="waiver" class="py-20 md:py-28 bg-gray-900">
+            <div class="container mx-auto px-6 text-center flex flex-col items-center">
+                <h2 class="section-title">🏀 Player Waiver – Required for Participation</h2>
+                <div class="max-w-3xl text-left text-gray-300 bg-gray-800 p-8 rounded-lg">
+                    <p class="mb-4">In consideration of being allowed to participate in any way in any <span class="brand-text"></span> Basketball tournament, the undersigned acknowledges, appreciates, and agrees that:</p>
+                    <ul class="list-disc list-inside space-y-2 mb-6">
+                        <li>The risk of injury from the activities involved in this program is significant, including the potential for permanent paralysis and death.</li>
+                        <li>I knowingly and freely assume all such risks, both known and unknown, even if arising from the negligence of the releasees or others, and assume full responsibility for my participation.</li>
+                        <li>I willingly agree to comply with the stated and customary terms and conditions for participation.</li>
+                    </ul>
+                    <p class="mb-8">A completed and signed waiver is mandatory for every player before they can step on the court. Please download, sign, and bring it with you.</p>
+                    <a href="/downloads/Showcase_Player_Waiver.pdf" download class="btn btn-primary text-lg w-full sm:w-auto">Download Waiver PDF</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-28 bg-black">
+             <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Questions? Get In Touch</h2>
+                <p class="text-lg text-gray-400 mb-4">For all inquiries, including registration, scheduling, and partnerships, please email us.</p>
+                <a href="mailto:basketball.showcase@mail.com" class="text-2xl md:text-3xl font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                    basketball.showcase@mail.com
+                </a>
+                <!-- Optional: Add social media icons here -->
+             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
+                <div class="flex flex-col">
+                    <p class="font-semibold">&copy; 2025 <span class="brand-text"></span> Basketball</p>
+                    <p class="text-sm text-gray-400 mt-1">Proudly hosting in Fraser Valley & Lower Mainland, BC</p>
+                </div>
+                <div class="flex space-x-6">
+                     <a href="#" class="text-gray-400 hover:text-white">Home</a>
+                     <a href="#tournaments" class="text-gray-400 hover:text-white">Tournaments</a>
+                     <a href="#waiver" class="text-gray-400 hover:text-white">Waiver</a>
+                     <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+                </div>
+                <div>
+                     <a href="mailto:basketball.showcase@mail.com" class="text-gray-400 hover:text-white">basketball.showcase@mail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
